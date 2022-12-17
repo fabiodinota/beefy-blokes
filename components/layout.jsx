@@ -45,14 +45,14 @@ const Layout = ({ children, title }) => {
         <meta property="og:url" content="https://beefy-blokes.vercel.app/" />
         <meta property="og:title" content="Beefy Blokes - Home" />
         <meta property="og:description" content="Beefy Blokes is a community of NFT collectors and creators." />
-        <meta property="og:image" content="//imgur.com/a/69bNhcd" />
+        <meta property="og:image" content="https://i.imgur.com/M0uUrMA.png" />
 
-        <meta property="og:image" content="//imgur.com/a/69bNhcd" />
+        <meta property="og:image" content="https://i.imgur.com/M0uUrMA.png" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://beefy-blokes.vercel.app/" />
         <meta property="twitter:title" content="Beefy Blokes - Home" />
         <meta property="twitter:description" content="Beefy Blokes is a community of NFT collectors and creators." />
-        <meta property="twitter:image" content="//imgur.com/a/69bNhcd" />
+        <meta property="twitter:image" content="https://i.imgur.com/M0uUrMA.png" />
       </Head>
       <header>
         <NavBar />
