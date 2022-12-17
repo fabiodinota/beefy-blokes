@@ -7,8 +7,8 @@ import Opensea from "../../public/images/opensea.png";
 import Menu from "../../public/images/menu.png";
 import CloseMenu from "../../public/images/close.png";
 import Logo_nav from "../../public/images/Logo_nav.png";
-import Twitter from "../../public/images/twitter.png";
-import Discord from "../../public/images/discord.png";
+import Twitter from "../../public/images/Twitter.png";
+import Discord from "../../public/images/Discord.png";
 
 const NavBar = () => {
   const router = useRouter();
