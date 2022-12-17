@@ -38,7 +38,7 @@ const index = () => {
               <Image src={Wordmark} alt="wordmark" fill />
             </div>
             <p className="py-5 text-white text-[20px] px-5 text-center">1500 NFT’s that embody Aussie culture, with unique Aussie traits.</p>
-            <button className="bg-black text-white font-extrabold rounded-full p-5 text-[22px] cursor-pointer"><Link href="/mint">MINT YOUR BLOKE <span className="relative w-5 h-3"><Image fill src={Arrow} alt="arrow" /></span></Link></button>
+            <button className="bg-black text-white font-extrabold rounded-full p-5 sm:text-[22px] px-3 text-[18px] cursor-pointer"><Link href="/mint">MINT YOUR BLOKE <span className="relative w-5 h-3"><Image fill src={Arrow} alt="arrow" /></span></Link></button>
             <Link className="text-[18px] py-4 cursor-pointer" href="https://google.com">See Marketplace</Link>
         </div>
           <div className="w-full h-full relative rotate-0 lg:rotate-90"> {/* container for both meats */}
