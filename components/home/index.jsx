@@ -33,7 +33,7 @@ const index = () => {
 
         </div> */}
         <div className="relative w-[90%] h-[800px] overflow-hidden rounded-2xl"> {/* container for whole meats section */}
-        <div className="w-full h-full absolute z-[9999] flex justify-center items-center flex-col">
+        <div className="w-full h-full absolute z-[100] flex justify-center items-center flex-col">
             <div className="relative w-[300px] h-[180px] lg:w-[550px] lg:h-[300px]">
               <Image src={Wordmark} alt="wordmark" fill />
             </div>
