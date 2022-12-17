@@ -202,7 +202,7 @@ const NavBar = () => {
           </div>
           <button
             onClick={() => setIsOpen(true)}
-            className={`fixed bg-white h-[40px] right-[30px] w-[40px] xl:hidden mr-[30px]`}
+            className={`absolute bg-white h-[40px] right-[30px] w-[40px] xl:hidden mr-[30px]`}
           >
             <Image fill src={Menu} alt="menuicon" />
           </button>
