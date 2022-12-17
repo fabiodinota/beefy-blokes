@@ -49,7 +49,7 @@ const NavBar = () => {
       <nav
         className={`h-40 w-full flex justify-center fixed z-[9999] transition-all duration-300 items-center flex-row bg-white`}
       >
-        <div className="w-[120px] ml-[30px]]  xl:ml-[100px] cursor-pointer flex-shrink-0">
+        <div className="w-[120px] ml-[30px]  xl:ml-[100px] cursor-pointer flex-shrink-0">
           <div>
             <Link href={links.home.link}>
               <Image src={Logo} alt="Logo" />
