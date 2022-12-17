@@ -41,26 +41,18 @@ const Layout = ({ children, title }) => {
           content="Beefy Blokes is a community of NFT collectors and creators."
         />
         <meta content="#73d8f9" data-react-helmet="true" name="theme-color" />
-        <meta property="og:url" content="" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Beefy Blokes" />
-        <meta
-          property="og:description"
-          content="Beefy Blokes is a community of NFT collectors and creators."
-        />
+        <meta property="og:url" content="https://beefy-blokes.vercel.app/" />
+        <meta property="og:title" content="Beefy Blokes - Home" />
+        <meta property="og:description" content="Beefy Blokes is a community of NFT collectors and creators." />
         <meta property="og:image" content="https://imgur.com/a/69bNhcd" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="" />
-        <meta
-          property="twitter:url"
-          content=""
-        />
-        <meta name="twitter:title" content="Beefy Blokes" />
-        <meta
-          name="twitter:description"
-          content="Beefy Blokes is a community of NFT collectors and creators."
-        />
-        <meta name="twitter:image" content="https://imgur.com/a/69bNhcd" />
+
+        <meta property="og:image" content="https://imgur.com/a/69bNhcd" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://beefy-blokes.vercel.app/" />
+        <meta property="twitter:title" content="Beefy Blokes - Home" />
+        <meta property="twitter:description" content="Beefy Blokes is a community of NFT collectors and creators." />
+        <meta property="twitter:image" content="https://imgur.com/a/69bNhcd" />
       </Head>
       <header>
         <NavBar />
