@@ -50,7 +50,7 @@ const NavBar = () => {
   return (
     <>
       <nav
-        className={`h-40 w-full flex justify-center fixed z-[9999] transition-all duration-300 items-center flex-row bg-white`}
+        className={`h-40 w-full flex justify-center absolute z-[9999] transition-all duration-300 items-center flex-row bg-white`}
       >
         <div className="w-[120px] ml-[30px]  xl:ml-[100px] cursor-pointer flex-shrink-0">
           <div>
