@@ -38,35 +38,29 @@ const Layout = ({ children, title }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Beyond Vision LTD is an influencer marketing and management agency based out of the United
-         Kingdom, but not limited to working inside of the United Kingdom as the agency works with various influencers & companies of
-          all different calibers all around the globe."
+          content="Beefy Blokes is a community of NFT collectors and creators."
         />
-        <meta content="#FFF46D" data-react-helmet="true" name="theme-color" />
-        <meta property="og:url" content="https://www.beyondvisionltd.org" />
+        <meta content="#73d8f9" data-react-helmet="true" name="theme-color" />
+        <meta property="og:url" content="" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Beyond Vision LTD" />
+        <meta property="og:title" content="Beefy Blokes" />
         <meta
           property="og:description"
-          content="Beyond Vision LTD is an influencer marketing and management agency based out of the United
-         Kingdom, but not limited to working inside of the United Kingdom as the agency works with various influencers & companies of
-          all different calibers all around the globe."
+          content="Beefy Blokes is a community of NFT collectors and creators."
         />
-        <meta property="og:image" content="https://i.imgur.com/Gd1N9JI.jpg" />
+        <meta property="og:image" content="https://imgur.com/a/69bNhcd" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="www.beyondvisionltd.org" />
+        <meta property="twitter:domain" content="" />
         <meta
           property="twitter:url"
-          content="https://www.beyondvisionltd.org"
+          content=""
         />
-        <meta name="twitter:title" content="Beyond Vision LTD" />
+        <meta name="twitter:title" content="Beefy Blokes" />
         <meta
           name="twitter:description"
-          content="Beyond Vision LTD is an influencer marketing and management agency based out of the United
-         Kingdom, but not limited to working inside of the United Kingdom as the agency works with various influencers & companies of
-          all different calibers all around the globe."
+          content="Beefy Blokes is a community of NFT collectors and creators."
         />
-        <meta name="twitter:image" content="https://i.imgur.com/Gd1N9JI.jpg" />
+        <meta name="twitter:image" content="https://imgur.com/a/69bNhcd" />
       </Head>
       <header>
         <NavBar />
