@@ -82,7 +82,7 @@ const Layout = ({ children, title }) => {
       <header>
         <NavBar />
       </header>
-      <main className="pt-40">{children}</main>
+      <main>{children}</main>
       <footer>
         <Mark />
       </footer>

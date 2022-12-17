@@ -121,7 +121,7 @@ const NavBar = () => {
               </button>
               <div className="left-10 top-40 absolute max-w-[300px] w-full">
                 <Link href={links.home.link}>
-                    <Image src={Logo_nav} alt="Logo" />
+                  <Image src={Logo_nav} alt="Logo" />
                 </Link>
               </div>
               <ul className="flex justify-center items-start w-full h-full flex-col xl:hidden pl-10 pr-10">
@@ -186,7 +186,10 @@ const NavBar = () => {
                     {links.discord.name}
                   </li>
                 </Link>
-                <Link className="sm:hidden group w-full py-2" href={links.opensea.link}>
+                <Link
+                  className="sm:hidden group w-full py-2"
+                  href={links.opensea.link}
+                >
                   <li className="nav text-black py-4 rounded-2xl text-[20px] group-hover:bg-gray-100 group-hover:text-gray-900 pl-5">
                     {links.opensea.name}
                   </li>
