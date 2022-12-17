@@ -2,10 +2,23 @@ import React from "react";
 import Mark from "./layout/mark";
 import Head from "next/head";
 import NavBar from "./layout/navbar";
+import { motion } from "framer-motion";
 
 const Layout = ({ children, title }) => {
+  const variants = {
+    initial: { opacity: 0, scale: 0.995, blur: 0 },
+    animate: { opacity: 1, scale: 1, blur: 100 },
+    exit: { opacity: 0, scale: 1.005, blur: 0 },
+  };
   return (
-    <div>
+    <motion.div
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      variants={variants}
+      transition={{ duration: 0.3 }}
+      className="w-screen h-screen"
+    >
       <Head>
         <title>Beefy Blokes - {title}</title>
         <meta charSet="utf-8" />
@@ -44,15 +57,27 @@ const Layout = ({ children, title }) => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://beefy-blokes.vercel.app/" />
         <meta property="og:title" content="Beefy Blokes - Home" />
-        <meta property="og:description" content="Beefy Blokes is a community of NFT collectors and creators." />
+        <meta
+          property="og:description"
+          content="Beefy Blokes is a community of NFT collectors and creators."
+        />
         <meta property="og:image" content="https://i.imgur.com/M0uUrMA.png" />
 
         <meta property="og:image" content="https://i.imgur.com/M0uUrMA.png" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://beefy-blokes.vercel.app/" />
+        <meta
+          property="twitter:url"
+          content="https://beefy-blokes.vercel.app/"
+        />
         <meta property="twitter:title" content="Beefy Blokes - Home" />
-        <meta property="twitter:description" content="Beefy Blokes is a community of NFT collectors and creators." />
-        <meta property="twitter:image" content="https://i.imgur.com/M0uUrMA.png" />
+        <meta
+          property="twitter:description"
+          content="Beefy Blokes is a community of NFT collectors and creators."
+        />
+        <meta
+          property="twitter:image"
+          content="https://i.imgur.com/M0uUrMA.png"
+        />
       </Head>
       <header>
         <NavBar />
@@ -61,7 +86,7 @@ const Layout = ({ children, title }) => {
       <footer>
         <Mark />
       </footer>
-    </div>
+    </motion.div>
   );
 };
 
