@@ -5,6 +5,19 @@
 * {
   font-family: "Sniglet", cursive;
 }
+
+::-webkit-scrollbar {
+  width: 1px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+}
+
+body{
+  overflow-x: hidden;
+}
 @layer components {
   .gradient {
     background-image: url("../public/images/gradient.png");
@@ -21,3 +34,4 @@
     background-size: cover;
   }
 }
+

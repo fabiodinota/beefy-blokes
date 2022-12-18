@@ -5,9 +5,9 @@ const Mark = ({ background }) => {
 
   const checkBackground = () => {
     if (backgroundValue === "white") {
-      return "text-black bg-opacity-30 bg-white backdrop-filter backdrop-blur-[1px]";
+      return "text-black bg-opacity-30 bg-[#FFF] backdrop-filter backdrop-blur-[1px]";
     } else if (backgroundValue === "black") {
-      return "text-white bg-black";
+      return "text-white bg-[#000]]";
     }
   };
 
