@@ -132,7 +132,7 @@ const NavBar = () => {
                   />
                 </div>
               </Link>
-              <ul className=" top-72 absolute overflow-scroll bottom-[100px] grid gap-2 w-full max-h-[410px] flex-col xl:hidden pl-10 pr-10">
+              <ul className=" top-72 absolute overflow-scroll bottom-[100px] grid gap-2 w-full max-h-[510px] sm:max-h-[410px] flex-col xl:hidden pl-10 pr-10">
                 <Link href={links.team.link} className="w-full group">
                   <li
                     className={`nav text-black py-4 rounded-2xl text-[20px] group-hover:bg-gray-100 group-hover:text-gray-900 duration-300   pl-5 ${
