@@ -4,7 +4,7 @@ import Head from "next/head";
 import NavBar from "./layout/navbar";
 import { motion } from "framer-motion";
 
-const Layout = ({ children, title }) => {
+const Layout = ({ children, title, background }) => {
   const variants = {
     initial: { opacity: 0, scale: 0.995, blur: 0 },
     animate: { opacity: 1, scale: 1, blur: 100 },
@@ -84,7 +84,7 @@ const Layout = ({ children, title }) => {
       </header>
       <main>{children}</main>
       <footer>
-        <Mark />
+        <Mark background={background} />
       </footer>
     </motion.div>
   );

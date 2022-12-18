@@ -108,24 +108,32 @@ const NavBar = () => {
           </ul>
 
           <div
-            className={`h-full w-full ${
+            className={`h-screen w-full ${
               isOpen ? "left-0" : "left-[-100%] "
             } fixed transition-all duration-500 z-[9999] top-0 xl:hidden  justify-start items-center flex overflow-hidden`}
           >
-            <div className="w-[80%] gradient h-screen relative rounded-r-3xl">
+            <div className="w-[80%] gradient relative h-screen rounded-r-3xl">
               <button
                 onClick={() => setIsOpen(false)}
                 className={`absolute right-[-30px] top-40 h-[60px] w-[60px]`}
               >
                 <Image fill src={CloseMenu} alt="menuicon" />
               </button>
-              <div className="left-10 top-40 absolute max-w-[300px] w-full">
-                <Link href={links.home.link}>
-                  <Image src={Logo_nav} alt="Logo" />
-                </Link>
-              </div>
-              <ul className="flex justify-center items-start w-full h-full flex-col xl:hidden pl-10 pr-10">
-                <Link href={links.team.link} className="w-full group py-2">
+              <Link
+                className="w-full absolute top-40 left-10"
+                href={links.home.link}
+              >
+                <div className=" w-full max-w-[70%] sm:max-w-[330px] h-16 absolute">
+                  <Image
+                    src={Logo_nav}
+                    className="object-contain flex-shrink-0"
+                    fill
+                    alt="Logo"
+                  />
+                </div>
+              </Link>
+              <ul className=" top-72 absolute overflow-scroll bottom-[100px] grid gap-2 w-full max-h-[410px] flex-col xl:hidden pl-10 pr-10">
+                <Link href={links.team.link} className="w-full group">
                   <li
                     className={`nav text-black py-4 rounded-2xl text-[20px] group-hover:bg-gray-100 group-hover:text-gray-900 duration-300   pl-5 ${
                       router.pathname == links.team.link
@@ -136,7 +144,7 @@ const NavBar = () => {
                     {links.team.name}
                   </li>
                 </Link>
-                <Link href={links.faq.link} className="w-full group py-2">
+                <Link href={links.faq.link} className="w-full group">
                   <li
                     className={`nav text-black py-4 rounded-2xl text-[20px] group-hover:bg-gray-100 group-hover:text-gray-900 duration-300  pl-5 ${
                       router.pathname == links.faq.link
@@ -195,7 +203,7 @@ const NavBar = () => {
                   </li>
                 </Link>
               </ul>
-              <button className="text-black bg-white  hover:bg-black hover:text-white active:bg-gray-700 duration-300 py-4 w-[90%] ml-[5%]  absolute bottom-5 rounded-[20px] whitespace-nowrap text-[20px]">
+              <button className="text-black bg-white  hover:bg-black hover:text-white active:bg-gray-700 duration-300 py-4 w-[90%] ml-[5%] z-50 absolute bottom-5 rounded-[20px] whitespace-nowrap text-[20px]">
                 Connect wallet
               </button>
             </div>
