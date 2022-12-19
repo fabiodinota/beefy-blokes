@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Layout from "../layout";
 import Image from "next/image";
-import TopMeat from "../../public/images/top_meat.png";
-import BottomMeat from "../../public/images/bottom_meat.png";
-import BackgroundMeat from "../../public/images/background_meat.png";
-import Plus from "../../public/images/plus.png";
-import Minus from "../../public/images/minus.png";
-import Bloke from "../../public/images/bloke.png";
+import TopMeat from "../../public/images/top_meat.webp";
+import BottomMeat from "../../public/images/bottom_meat.webp";
+import BackgroundMeat from "../../public/images/background_meat.webp";
+import Plus from "../../public/images/plus.webp";
+import Minus from "../../public/images/minus.webp";
+import Bloke from "../../public/images/bloke.webp";
 
 const index = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks

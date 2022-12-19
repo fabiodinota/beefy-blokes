@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import Layout from "../layout";
-import Background from "../../public/images/background.png";
 import Image from "next/image";
-import Background_small from "../../public/images/background_small.png";
-import BackgroundNew from "../../public/images/background_small_new.png";
-import TopMeat from "../../public/images/top_meat.png";
-import BottomMeat from "../../public/images/bottom_meat.png";
-import BackgroundMeat from "../../public/images/background_meat.png";
+import TopMeat from "../../public/images/top_meat.webp";
+import BottomMeat from "../../public/images/bottom_meat.webp";
+import BackgroundMeat from "../../public/images/background_meat.webp";
 import Link from "next/link";
-import Wordmark from "../../public/images/wordmark.png";
-import Arrow from "../../public/images/arrow.png";
+import Wordmark from "../../public/images/wordmark.webp";
+import Arrow from "../../public/images/arrow.webp";
 
 const index = () => {
   return (

@@ -1,16 +1,16 @@
 import React from "react";
 import Layout from "../layout";
-import TopMeat from "../../public/images/top_meat.png";
-import BottomMeat from "../../public/images/bottom_meat.png";
-import BackgroundMeat from "../../public/images/background_meat.png";
-import Header from "../../public/images/about_header.png";
+import TopMeat from "../../public/images/top_meat.webp";
+import BottomMeat from "../../public/images/bottom_meat.webp";
+import BackgroundMeat from "../../public/images/background_meat.webp";
+import Header from "../../public/images/about_header.webp";
 import Image from "next/image";
-import Icon from "../../public/images/about_icon.png";
-import Bbq from "../../public/images/bbq.png";
-import Beefy from "../../public/images/beefy.png";
-import Crocodile from "../../public/images/crocodile.png";
-import Mullet from "../../public/images/mullet.png";
-import socceroo from "../../public/images/socceroo.png";
+import Icon from "../../public/images/about_icon.webp";
+import Bbq from "../../public/images/bbq.webp";
+import Beefy from "../../public/images/beefy.webp";
+import Crocodile from "../../public/images/crocodile.webp";
+import Mullet from "../../public/images/mullet.webp";
+import socceroo from "../../public/images/socceroo.webp";
 
 const index = () => {
   return (

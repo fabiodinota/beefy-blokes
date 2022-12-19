@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import Layout from "../layout";
-import TopMeat from "../../public/images/top_meat.png";
-import BottomMeat from "../../public/images/bottom_meat.png";
-import BackgroundMeat from "../../public/images/background_meat.png";
-import Twitter from "../../public/images/twitter_team.png";
-import Jackson from "../../public/images/jackson.png";
-import Luis from "../../public/images/luis.png";
-import Hughezy from "../../public/images/hughezy.png";
-import Meet from "../../public/images/meet.png";
+import TopMeat from "../../public/images/top_meat.webp";
+import BottomMeat from "../../public/images/bottom_meat.webp";
+import BackgroundMeat from "../../public/images/background_meat.webp";
+import Twitter from "../../public/images/twitter_team.webp";
+import Jackson from "../../public/images/jackson.webp";
+import Luis from "../../public/images/luis.webp";
+import Hughezy from "../../public/images/hughezy.webp";
+import Meet from "../../public/images/meet.webp";
 import Link from "next/link";
 
 const index = () => {

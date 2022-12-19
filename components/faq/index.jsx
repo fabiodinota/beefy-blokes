@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Layout from "../layout";
-import TopMeat from "../../public/images/top_meat.png";
-import BottomMeat from "../../public/images/bottom_meat.png";
-import BackgroundMeat from "../../public/images/background_meat.png";
-import Header from "../../public/images/header.png";
-import Plus from "../../public/images/plus_faq.png";
+import TopMeat from "../../public/images/top_meat.webp";
+import BottomMeat from "../../public/images/bottom_meat.webp";
+import BackgroundMeat from "../../public/images/background_meat.webp";
+import Header from "../../public/images/header.webp";
+import Plus from "../../public/images/plus_faq.webp";
 
 const index = () => {
   const items = [

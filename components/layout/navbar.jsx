@@ -1,14 +1,14 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "../../public/images/beefy-logo.jpg";
+import Logo from "../../public/images/beefy-logo.webp";
 import { useRouter } from "next/router";
-import Opensea from "../../public/images/opensea.png";
-import Menu from "../../public/images/menu.png";
-import CloseMenu from "../../public/images/close.png";
-import Logo_nav from "../../public/images/Logo_nav.png";
-import Twitter from "../../public/images/Twitter.png";
-import Discord from "../../public/images/Discord.png";
+import Opensea from "../../public/images/opensea.webp";
+import Menu from "../../public/images/menu.webp";
+import CloseMenu from "../../public/images/close.webp";
+import Logo_nav from "../../public/images/Logo_nav.webp";
+import Twitter from "../../public/images/Twitter.webp";
+import Discord from "../../public/images/Discord.webp";
 
 const NavBar = () => {
   const router = useRouter();
