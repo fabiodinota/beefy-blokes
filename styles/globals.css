@@ -26,14 +26,14 @@ body{
 }
 @layer components {
   .gradient {
-    background-image: url("../public/images/gradient.png");
+    background-image: url("../public/images/gradient.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
   .main-background {
-    background-image: url("../public/images/background.png");
+    background-image: url("../public/images/background.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
