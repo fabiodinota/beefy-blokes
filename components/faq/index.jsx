@@ -12,30 +12,25 @@ const index = () => {
     {
       question: "PURPOSE?",
       answer: "Our purpose is to bring together a community that encourages, motivates and supports holders. At Beefy Blokes we want our holders of our NFT to think of it as a membership to an exclusive community of like-minded individuals, who are all committed to helping each other. Moreover, our why is to onboard blokes to the Web3 space within the early phases of adoption. We are innovators guided by our community and the evolving Web3 world.",
-      height: 630,
     },
     {
       question: "SUPPLY?",
-      answer:
-        "TBA",
-        height: 150,
+      answer: "TBA",
     },
     {
       question: "STORY?",
       answer: "The characters represent human traits that Australian Blokes most admire. What is a bloke you might ask? The word 'Bloke' is essentially the same as 'man' but in a more casual way. We focused on traits that we believe will lead to nostalgia, happiness and resemblance!",
-      height: 350,
     },
     {
       question: "HOW TO BUY?",
       answer: "TBA",
-      height: 150,
     },
   ];
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [open, setOpen] = useState(4);
   return (
     <Layout title="FAQ" background={"white"}>
-      <div className="w-full h-full absolute top-0 flex justify-center items-start -z-10 bg-black bg-opacity-0 backdrop-blur-[2px] backdrop-filter">
+      <div className="w-full h-screen fixed overflow-scroll top-0 flex justify-center items-start -z-10 bg-black bg-opacity-0 backdrop-blur-[2px] backdrop-filter">
         <div className="w-full px-10 max-w-[1200px] pt-60 flex flex-col justify-start items-start">
           <div className="max-w-[600px] relative w-full h-[150px] px-10">
             <Image src={Header} alt="header" fill className="object-contain" />
@@ -46,9 +41,16 @@ const index = () => {
                 return (
                   <div
                     key={index}
-                    className={` border-t-[2px] border-black max-w-[1200px] py-10 mt-0 w-full  mb-5 overflow-clip transition-all duration-700 ${
-                      open === index ? `h-[${item.height}px]` : "h-12"
-                    }`}
+                    onClick={() => {
+                      if (open === index) {
+                        setOpen(4);
+                      } else {
+                        setOpen(index);
+                      }
+                    }}
+                    className={` border-t-[2px] cursor-pointer border-black max-w-[1200px] py-10 mt-0 w-full  mb-5 overflow-clip transition-all duration-300
+                    ${ open === index ? "h-max" : "h-0" }
+                    `}
                   >
                     <div
                       className={`max-w-[1200px] w-full origin-top transition-all duration-200 text-black
