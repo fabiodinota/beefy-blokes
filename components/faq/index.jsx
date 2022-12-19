@@ -23,7 +23,7 @@ const index = () => {
     {
       question: "STORY?",
       answer: "The characters represent human traits that Australian Blokes most admire. What is a bloke you might ask? The word 'Bloke' is essentially the same as 'man' but in a more casual way. We focused on traits that we believe will lead to nostalgia, happiness and resemblance!",
-      height: 200,
+      height: 350,
     },
     {
       question: "HOW TO BUY?",
