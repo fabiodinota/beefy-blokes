@@ -41,7 +41,7 @@ const index = () => {
                   </p>
                 </div>
             </div>
-            <div className="w-full pt-40 mb-20 pb-5 flex justify-start 2xl:justify-center overflow-scroll items-start">
+            <div className="w-full pt-40 mb-20 pb-5 flex justify-start 2xl:justify-center scrollbar overflow-scroll items-start">
               <div className="w-80 h-80 flex-shrink-0 mb-10 relative">
                 <Image src={Crocodile} fill className="object-contain" alt="bbq" />
               </div>
