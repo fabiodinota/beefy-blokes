@@ -76,7 +76,7 @@ const index = () => {
           </div>
         </div>
       </div>
-      <div className="w-full fixed -z-20 h-screen overflow-hidden pt-40 rounded-2xl">
+      <div className="w-screen h-screen fixed -z-20 overflow-hidden pt-40 rounded-2xl">
         <div className="w-full h-full relative rotate-0 lg:rotate-90">
           <div className="h-80 w-full absolute top-[-240px] lg:top-[-40%]">
             <Image
