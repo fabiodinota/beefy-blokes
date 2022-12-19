@@ -43,7 +43,7 @@ const index = () => {
               <Link href="/mint">
                 MINT YOUR BLOKE{" "}
                 <span className="relative w-5 h-3">
-                  <Image fill src={Arrow} alt="arrow" />
+                  <Image fill loading="eager" src={Arrow} alt="arrow" />
                 </span>
               </Link>
             </button>
@@ -63,6 +63,7 @@ const index = () => {
               <Image
                 src={TopMeat}
                 className="object-contain"
+                loading="eager"
                 fill
                 alt="background"
               />{" "}
@@ -74,6 +75,7 @@ const index = () => {
               <Image
                 src={BottomMeat}
                 className="object-contain"
+                loading="eager"
                 fill
                 alt="background"
               />{" "}
@@ -82,6 +84,7 @@ const index = () => {
           </div>
           <Image
             src={BackgroundMeat}
+            loading="eager"
             className="object-cover absolute -z-50"
             fill
             alt="background"

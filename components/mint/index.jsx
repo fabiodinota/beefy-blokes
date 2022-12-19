@@ -51,7 +51,7 @@ const index = () => {
           {/* container for whole meats section */}
           <div className="w-full h-full absolute z-[100] scale-90 xs:scale-100 flex justify-center items-center flex-col">
             <div className="w-[300px] relative h-[300px]">
-              <Image src={Bloke} fill alt="bloke" />
+              <Image loading="eager" src={Bloke} fill alt="bloke" />
             </div>
             <div className="w-[300px] h-[150px] relative border-2 border-black rounded-[30px]">
               <button className="w-full h-[75px] top-0 left-0 bg-black rounded-[24px] text-[40px] font-extrabold text-white absolute">
@@ -70,14 +70,14 @@ const index = () => {
                       className="cursor-pointer relative h-5 w-5"
                       onClick={() => handleDecrease()}
                     >
-                      <Image src={Minus} fill alt="minus" />
+                      <Image loading="eager" src={Minus} fill alt="minus" />
                     </div>
                     <div className="scale-[1.15]">{count}</div>
                     <div
                       className="cursor-pointer relative h-5 w-5"
                       onClick={() => handleIncrease()}
                     >
-                      <Image src={Plus} fill alt="plus" />
+                      <Image  loading="eager" src={Plus} fill alt="plus" />
                     </div>
                   </div>
                   <div
@@ -100,7 +100,7 @@ const index = () => {
             <div className="h-80 w-full absolute top-[-120px] lg:top-[-40%]">
               {" "}
               {/* container for each meats */}
-              <Image
+              <Image loading="eager"
                 src={TopMeat}
                 className="object-contain"
                 fill
@@ -111,7 +111,7 @@ const index = () => {
             <div className="h-80 w-full absolute bottom-[-120px] lg:bottom-[-40%]">
               {" "}
               {/* container for each meats */}
-              <Image
+              <Image loading="eager"
                 src={BottomMeat}
                 className="object-contain"
                 fill
@@ -120,7 +120,7 @@ const index = () => {
               {/* image for each meat */}
             </div>
           </div>
-          <Image
+          <Image loading="eager"
             src={BackgroundMeat}
             className="object-cover absolute -z-50"
             fill

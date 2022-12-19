@@ -20,7 +20,7 @@ const index = () => {
             <div className="relative grid h-80 w-80">
               <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">
                 <Link href="https://twitter.com">
-                  <Image
+                  <Image loading="eager"
                     src={Twitter}
                     fill
                     className="object-contain"
@@ -28,7 +28,7 @@ const index = () => {
                   />
                 </Link>
               </div>
-              <Image src={Jackson} fill className="object-contain" alt="pfp" />
+              <Image loading="eager" src={Jackson} fill className="object-contain" alt="pfp" />
             </div>
             <p className="text-center text-3xl pt-4">Jackson Meji</p>
             <p className="text-center text-2xl font-extrabold py-2">Founder</p>
@@ -38,7 +38,7 @@ const index = () => {
             <div className="relative grid h-80 w-80">
               <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">
                 <Link href="https://twitter.com">
-                  <Image
+                  <Image loading="eager"
                     src={Twitter}
                     fill
                     className="object-contain"
@@ -46,7 +46,7 @@ const index = () => {
                   />
                 </Link>
               </div>
-              <Image src={Luis} fill className="object-contain" alt="pfp" />
+              <Image loading="eager" src={Luis} fill className="object-contain" alt="pfp" />
             </div>
             <p className="text-center text-3xl pt-4">Luis Morzone</p>
             <p className="text-center text-2xl font-extrabold py-2">
@@ -58,7 +58,7 @@ const index = () => {
             <div className="relative grid h-80 w-80">
               <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">
                 <Link href="https://twitter.com">
-                  <Image
+                  <Image loading="eager"
                     src={Twitter}
                     fill
                     className="object-contain"
@@ -66,7 +66,7 @@ const index = () => {
                   />
                 </Link>
               </div>
-              <Image src={Hughezy} fill className="object-contain" alt="pfp" />
+              <Image loading="eager" src={Hughezy} fill className="object-contain" alt="pfp" />
             </div>
             <p className="text-center text-3xl pt-4">Hughezy</p>
             <p className="text-center text-2xl font-extrabold py-2">
@@ -79,7 +79,7 @@ const index = () => {
       <div className="w-screen h-screen fixed -z-20 overflow-hidden pt-40 rounded-2xl">
         <div className="w-full h-full relative rotate-0 lg:rotate-90">
           <div className="h-80 w-full absolute top-[-240px] lg:top-[-40%]">
-            <Image
+            <Image loading="eager"
               src={TopMeat}
               className="object-contain"
               fill
@@ -87,7 +87,7 @@ const index = () => {
             />
           </div>
           <div className="h-80 w-full absolute bottom-[-120px] lg:bottom-[-40%]">
-            <Image
+            <Image loading="eager"
               src={BottomMeat}
               className="object-contain"
               fill
@@ -95,7 +95,7 @@ const index = () => {
             />
           </div>
         </div>
-        <Image
+        <Image loading="eager"
           src={BackgroundMeat}
           className="object-cover absolute -z-50"
           fill

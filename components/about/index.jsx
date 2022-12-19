@@ -18,11 +18,11 @@ const index = () => {
       <div className="w-full h-max absolute top-0 flex justify-center items-start -z-10 bg-black bg-opacity-0 backdrop-blur-[2px] backdrop-filter">
         <div className="w-full px-10 overflow-hidden pt-60 flex flex-col justify-center items-center">
           <div className="max-w-[600px] relative w-full h-[150px] px-10">
-            <Image src={Header} alt="header" fill className="object-contain" />
+            <Image src={Header} loading="eager" alt="header" fill className="object-contain" />
           </div>
           <div className="max-w-[1100px] border-t-4 border-l-4 border-black h-full top-10 left-10 relative w-full mr-10">
                 <div className="absolute w-20 h-20 -top-10 -left-10 pl-20">
-                  <Image src={Icon} fill className="object-contain" alt="icon" />
+                  <Image src={Icon} loading="eager" fill className="object-contain" alt="icon" />
                 </div>
                 <div className="w-full text-center px-10">
                   <p className="text-[28px] font-extrabold pt-10">
@@ -43,28 +43,28 @@ const index = () => {
             </div>
             <div className="w-full pt-40 mb-20 pb-5 flex justify-start 2xl:justify-center scrollbar overflow-scroll items-start">
               <div className="w-80 h-80 flex-shrink-0 mb-10 relative">
-                <Image src={Crocodile} fill className="object-contain" alt="bbq" />
+                <Image src={Crocodile} loading="eager" fill className="object-contain" alt="bbq" />
               </div>
               <div className="w-80 h-80 flex-shrink-0 mt-10 relative">
-                <Image src={socceroo} fill className="object-contain" alt="beefy" />
+                <Image src={socceroo} loading="eager" fill className="object-contain" alt="beefy" />
               </div>
               <div className="w-80 h-80 flex-shrink-0 mb-10 relative">
-                <Image src={Bbq} fill className="object-contain" alt="crocodile" />
+                <Image src={Bbq} loading="eager" fill className="object-contain" alt="crocodile" />
               </div>
               <div className="w-80 h-80 flex-shrink-0 mt-10 relative">
-                <Image src={Mullet} fill className="object-contain" alt="crocodile" />
+                <Image src={Mullet} loading="eager" fill className="object-contain" alt="crocodile" />
               </div>
               <div className="w-80 h-80 flex-shrink-0 mb-10 relative">
-                <Image src={Beefy} fill className="object-contain" alt="crocodile" />
+                <Image src={Beefy} loading="eager" fill className="object-contain" alt="crocodile" />
               </div>
-        </div>
+          </div>
         </div>
       </div>
-       <div className="w-full fixed -z-20 h-screen overflow-hidden pt-40 rounded-2xl">
+      <div className="w-full fixed -z-20 h-screen overflow-hidden pt-40 rounded-2xl">
         <div className="w-full h-full relative rotate-0 lg:rotate-90">
           <div className="h-80 w-full absolute top-[-240px] lg:top-[-40%]">
             <Image
-              src={TopMeat}
+              src={TopMeat} loading="eager"
               className="object-contain"
               fill
               alt="background"
@@ -72,7 +72,7 @@ const index = () => {
           </div>
           <div className="h-80 w-full absolute bottom-[-120px] lg:bottom-[-40%]">
             <Image
-              src={BottomMeat}
+              src={BottomMeat} loading="eager"
               className="object-contain"
               fill
               alt="background"
@@ -80,7 +80,8 @@ const index = () => {
           </div>
         </div>
         <Image
-          src={BackgroundMeat}
+          src={BackgroundMeat} 
+          loading="eager"
           className="object-cover absolute -z-50"
           fill
           alt="background"

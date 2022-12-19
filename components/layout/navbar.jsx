@@ -55,7 +55,7 @@ const NavBar = () => {
         <div className="w-[120px] ml-[30px]  xl:ml-[100px] cursor-pointer flex-shrink-0">
           <div>
             <Link href={links.home.link}>
-              <Image src={Logo} alt="Logo" />
+              <Image loading="eager" src={Logo} alt="Logo" />
             </Link>
           </div>
         </div>
@@ -117,14 +117,14 @@ const NavBar = () => {
                 onClick={() => setIsOpen(false)}
                 className={`absolute right-[-30px] top-40 h-[60px] w-[60px]`}
               >
-                <Image fill src={CloseMenu} alt="menuicon" />
+                <Image loading="eager" fill src={CloseMenu} alt="menuicon" />
               </button>
               <Link
                 className="w-full absolute top-40 left-10"
                 href={links.home.link}
               >
                 <div className=" w-full max-w-[70%] sm:max-w-[330px] h-16 absolute">
-                  <Image
+                  <Image loading="eager"
                     src={Logo_nav}
                     className="object-contain flex-shrink-0"
                     fill
@@ -175,7 +175,7 @@ const NavBar = () => {
                     }`}
                   >
                     <div className="w-6 h-6 mr-3 mt-[2px] relative">
-                      <Image src={Twitter} fill alt="twitter" />
+                      <Image loading="eager" src={Twitter} fill alt="twitter" />
                     </div>
                     {links.twitter.name}
                   </li>
@@ -189,7 +189,7 @@ const NavBar = () => {
                     }`}
                   >
                     <div className="w-6 h-6 mr-3 mt-[2px] relative">
-                      <Image src={Discord} fill alt="twitter" />
+                      <Image loading="eager" src={Discord} fill alt="twitter" />
                     </div>
                     {links.discord.name}
                   </li>
@@ -212,12 +212,12 @@ const NavBar = () => {
             onClick={() => setIsOpen(true)}
             className={`absolute bg-white h-[40px] right-[30px] w-[40px] xl:hidden mr-[30px]`}
           >
-            <Image fill src={Menu} alt="menuicon" />
+            <Image loading="eager" fill src={Menu} alt="menuicon" />
           </button>
         </div>
         <div className="pr-[130px] hidden sm:flex w-max flex-row justify-center items-center space-x-4">
           <div className="w-16 aspect-square cursor-pointer relative outline-2 outline-red-500">
-            <Image src={Opensea} className="z-10" fill alt="Opensea" />
+            <Image loading="eager" src={Opensea} className="z-10" fill alt="Opensea" />
           </div>
           <button className="text-black border-[1.7px] hover:bg-black hover:text-white active:bg-gray-700 transition-color duration-300 border-black bg-white px-5 py-2 w-full rounded-full whitespace-nowrap nav">
             Connect wallet

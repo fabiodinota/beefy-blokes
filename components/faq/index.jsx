@@ -33,7 +33,7 @@ const index = () => {
       <div className="w-full h-screen fixed overflow-scroll top-0 flex justify-center items-start -z-10 bg-black bg-opacity-0 backdrop-blur-[2px] backdrop-filter">
         <div className="w-full px-10 max-w-[1200px] pt-60 flex flex-col justify-start items-start">
           <div className="max-w-[600px] relative w-full h-[150px] px-10">
-            <Image src={Header} alt="header" fill className="object-contain" />
+            <Image src={Header} loading="eager" alt="header" fill className="object-contain" />
           </div>
           <div className="pb-20 w-full flex justify-start pt-20 items-center flex-col">
             <div className="px-[20px]">
@@ -71,7 +71,8 @@ const index = () => {
                           }}
                         >
                           <Image
-                            src={Plus}
+                            src={Plus} 
+                            loading="eager"
                             alt="plus"
                             fill
                             className={`object-contain`}
@@ -95,7 +96,7 @@ const index = () => {
         <div className="w-full h-full relative rotate-0 lg:rotate-90">
           <div className="h-80 w-full absolute top-[-240px] lg:top-[-40%]">
             <Image
-              src={TopMeat}
+              src={TopMeat} loading="eager"
               className="object-contain"
               fill
               alt="background"
@@ -103,7 +104,7 @@ const index = () => {
           </div>
           <div className="h-80 w-full absolute bottom-[-120px] lg:bottom-[-40%]">
             <Image
-              src={BottomMeat}
+              src={BottomMeat} loading="eager"
               className="object-contain"
               fill
               alt="background"
@@ -111,7 +112,7 @@ const index = () => {
           </div>
         </div>
         <Image
-          src={BackgroundMeat}
+          src={BackgroundMeat} loading="eager"
           className="object-cover absolute -z-50"
           fill
           alt="background"
