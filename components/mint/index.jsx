@@ -49,7 +49,7 @@ const index = () => {
         <div className="relative w-[90%] h-[800px] overflow-hidden rounded-2xl">
           {" "}
           {/* container for whole meats section */}
-          <div className="w-full h-full absolute z-[100] scale-90 xs:scale-100 flex justify-center items-center flex-col">
+          <div className="w-full h-full absolute z-[100] scale-100 sm:scale-125 flex justify-center items-center flex-col">
             <div className="w-[300px] relative h-[300px]">
               <Image loading="eager" src={Bloke} fill alt="bloke" />
             </div>

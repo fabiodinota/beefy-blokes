@@ -11,7 +11,7 @@ import Arrow from "../../public/images/arrow.webp";
 const index = () => {
   return (
     <Layout title="Home">
-      <div className=" pt-40 relative flex flex-col justify-center items-center">
+      <div className=" pt-40 relative h-full flex flex-col justify-center items-center">
         {/* <div
           className={` rounded-3xl overflow-hidden mb-40 relative w-[90%]`}
         >
@@ -29,7 +29,7 @@ const index = () => {
           />
 
         </div> */}
-        <div className="relative w-[90%] h-[800px] overflow-hidden rounded-2xl">
+        <div className="relative w-[90%] h-[620px] overflow-hidden rounded-2xl">
           {" "}
           {/* container for whole meats section */}
           <div className="w-full h-full absolute z-[100] flex justify-center items-center flex-col">
@@ -54,10 +54,11 @@ const index = () => {
               See Marketplace
             </Link>
           </div>
+
           <div className="w-full h-full relative rotate-0 lg:rotate-90">
             {" "}
             {/* container for both meats */}
-            <div className="h-80 w-full absolute top-[-120px] lg:top-[-40%]">
+            <div className="h-80 w-full absolute top-[-120px] lg:top-[-50%]">
               {" "}
               {/* container for each meats */}
               <Image
@@ -69,7 +70,7 @@ const index = () => {
               />{" "}
               {/* image for each meat */}
             </div>
-            <div className="h-80 w-full absolute bottom-[-120px] lg:bottom-[-40%]">
+            <div className="h-80 w-full absolute bottom-[-120px] lg:bottom-[-50%]">
               {" "}
               {/* container for each meats */}
               <Image
@@ -89,8 +90,8 @@ const index = () => {
             fill
             alt="background"
           />
-        </div>
-        <div className="w-[85%] flex flex-row justify-between items-center py-10 pb-20">
+          </div>
+        <div className="w-[85%] flex flex-row justify-between items-center py-10 ">
           <p className="pr-10">
             Your Bloke will range from a Boxing Kangaroo to a Barbeque King.
             <br />

@@ -55,7 +55,7 @@ const NavBar = () => {
         <div className="w-[120px] ml-[30px]  xl:ml-[100px] cursor-pointer flex-shrink-0">
           <div>
             <Link href={links.home.link}>
-              <Image loading="eager" src={Logo} alt="Logo" />
+              <Image loading="eager" src={Logo} width={120} height={120} alt="Logo" />
             </Link>
           </div>
         </div>
