@@ -13,7 +13,7 @@ import Link from "next/link";
 
 const index = () => {
   return (
-    <Layout title="Team" background={"white"}>
+    <Layout title="Team" background={"white"} show={false}>
       <div className="w-full xl:h-screen absolute xl:fixed top-0 flex justify-center flex-col items-center -z-10 bg-white bg-opacity-0 backdrop-blur-[2px] backdrop-filter">
         <div className="max-w-[800px] relative top-60 xl:top-48 w-full h-[180px] px-10">
           <Image

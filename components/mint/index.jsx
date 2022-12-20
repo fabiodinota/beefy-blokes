@@ -65,7 +65,7 @@ const index = () => {
                   </div>
                 </div>
                 <div className=" flex flex-col space-y-2 justify-center items-center">
-                  <div className="flex flex-row  space-x-3">
+                  <div className="flex flex-row  space-x-3 justify-center items-center">
                     <div
                       className="cursor-pointer relative h-5 w-5"
                       onClick={() => handleDecrease()}
