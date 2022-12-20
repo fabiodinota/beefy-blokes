@@ -39,12 +39,11 @@ const index = () => {
             <p className="py-5 text-white text-[20px] px-5 text-center">
               1500 NFT’s that embody Aussie culture, with unique Aussie traits.
             </p>
-            <button className="bg-black text-white hover:bg-transparent border-4 border-black hover:text-black duration-300 font-bold rounded-full p-5 sm:text-[22px] px-8 text-[18px] cursor-pointer">
-              <Link href="/mint">
+            <Link href="/mint">
+              <button className="bg-black text-white hover:bg-transparent border-4 border-black hover:text-black duration-300 font-bold rounded-full p-5 sm:text-[22px] px-8 text-[18px] cursor-pointer">
                 MINT YOUR BLOKE{" "}
-               
-              </Link>
-            </button>
+              </button>
+            </Link>
             <Link
               className="text-[18px] py-4 cursor-pointer flex flex-row justify-center items-center gap-2 hover:gap-4 duration-300"
               href="https://google.com"
@@ -55,7 +54,6 @@ const index = () => {
               </span>
             </Link>
           </div>
-
           <div className="w-full h-full relative rotate-0 lg:rotate-90">
             {" "}
             {/* container for both meats */}
@@ -91,7 +89,7 @@ const index = () => {
             fill
             alt="background"
           />
-          </div>
+        </div>
         <div className="w-[85%] flex flex-row justify-between items-center py-10 ">
           <p className="pr-10">
             Your Bloke will range from a Boxing Kangaroo to a Barbeque King.

@@ -16,14 +16,21 @@ const index = () => {
     <Layout title="Team" background={"white"}>
       <div className="w-full xl:h-screen absolute xl:fixed top-0 flex justify-center flex-col items-center -z-10 bg-white bg-opacity-0 backdrop-blur-[2px] backdrop-filter">
         <div className="max-w-[800px] relative top-60 xl:top-48 w-full h-[180px] px-10">
-            <Image src={Meet} loading="eager" alt="header" fill className="object-contain" />
-          </div>
+          <Image
+            src={Meet}
+            loading="eager"
+            alt="header"
+            fill
+            className="object-contain"
+          />
+        </div>
         <div className="w-full px-10 max-w-[1200px] pt-72 xl:pt-60 xl:space-x-16 flex flex-col xl:flex-row justify-around xl:justify-center items-center">
           <div className="">
             <div className="relative grid h-80 w-80">
               <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">
                 <Link href="https://twitter.com">
-                  <Image loading="eager"
+                  <Image
+                    loading="eager"
                     src={Twitter}
                     fill
                     className="object-contain"
@@ -31,7 +38,13 @@ const index = () => {
                   />
                 </Link>
               </div>
-              <Image loading="eager" src={Jackson} fill className="object-contain" alt="pfp" />
+              <Image
+                loading="eager"
+                src={Jackson}
+                fill
+                className="object-contain"
+                alt="pfp"
+              />
             </div>
             <p className="text-center text-3xl pt-4">Jackson Meji</p>
             <p className="text-center text-2xl font-extrabold py-2">Founder</p>
@@ -41,7 +54,8 @@ const index = () => {
             <div className="relative grid h-80 w-80">
               <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">
                 <Link href="https://twitter.com">
-                  <Image loading="eager"
+                  <Image
+                    loading="eager"
                     src={Twitter}
                     fill
                     className="object-contain"
@@ -49,7 +63,13 @@ const index = () => {
                   />
                 </Link>
               </div>
-              <Image loading="eager" src={Luis} fill className="object-contain" alt="pfp" />
+              <Image
+                loading="eager"
+                src={Luis}
+                fill
+                className="object-contain"
+                alt="pfp"
+              />
             </div>
             <p className="text-center text-3xl pt-4">Luis Morzone</p>
             <p className="text-center text-2xl font-extrabold py-2">
@@ -61,7 +81,8 @@ const index = () => {
             <div className="relative grid h-80 w-80">
               <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">
                 <Link href="https://twitter.com">
-                  <Image loading="eager"
+                  <Image
+                    loading="eager"
                     src={Twitter}
                     fill
                     className="object-contain"
@@ -69,7 +90,13 @@ const index = () => {
                   />
                 </Link>
               </div>
-              <Image loading="eager" src={Hughezy} fill className="object-contain" alt="pfp" />
+              <Image
+                loading="eager"
+                src={Hughezy}
+                fill
+                className="object-contain"
+                alt="pfp"
+              />
             </div>
             <p className="text-center text-3xl pt-4">Hughezy</p>
             <p className="text-center text-2xl font-extrabold py-2">
@@ -82,7 +109,8 @@ const index = () => {
       <div className="w-screen h-screen fixed -z-20 overflow-hidden pt-40 rounded-2xl">
         <div className="w-full h-full relative rotate-0 lg:rotate-90">
           <div className="h-80 w-full absolute top-[-240px] lg:top-[-40%]">
-            <Image loading="eager"
+            <Image
+              loading="eager"
               src={TopMeat}
               className="object-contain"
               fill
@@ -90,7 +118,8 @@ const index = () => {
             />
           </div>
           <div className="h-80 w-full absolute bottom-[-120px] lg:bottom-[-40%]">
-            <Image loading="eager"
+            <Image
+              loading="eager"
               src={BottomMeat}
               className="object-contain"
               fill
@@ -98,7 +127,8 @@ const index = () => {
             />
           </div>
         </div>
-        <Image loading="eager"
+        <Image
+          loading="eager"
           src={BackgroundMeat}
           className="object-cover absolute -z-50"
           fill

@@ -5,8 +5,7 @@
 * {
   font-family: "Sniglet", cursive;
 }
-::web
-::-webkit-scrollbar {
+::web ::-webkit-scrollbar {
   height: 4px;
   width: 4px;
   background-color: transparent;
@@ -16,12 +15,12 @@
   border-radius: 0.5rem;
 }
 
-.scrollbar::-webkit-scrollbar{
+.scrollbar::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 @layer components {
@@ -40,4 +39,3 @@ body{
     background-size: cover;
   }
 }
-

@@ -11,7 +11,8 @@ const index = () => {
   const items = [
     {
       question: "PURPOSE?",
-      answer: "Our purpose is to bring together a community that encourages, motivates and supports holders. At Beefy Blokes we want our holders of our NFT to think of it as a membership to an exclusive community of like-minded individuals, who are all committed to helping each other. Moreover, our why is to onboard blokes to the Web3 space within the early phases of adoption. We are innovators guided by our community and the evolving Web3 world.",
+      answer:
+        "Our purpose is to bring together a community that encourages, motivates and supports holders. At Beefy Blokes we want our holders of our NFT to think of it as a membership to an exclusive community of like-minded individuals, who are all committed to helping each other. Moreover, our why is to onboard blokes to the Web3 space within the early phases of adoption. We are innovators guided by our community and the evolving Web3 world.",
     },
     {
       question: "SUPPLY?",
@@ -19,7 +20,8 @@ const index = () => {
     },
     {
       question: "STORY?",
-      answer: "The characters represent human traits that Australian Blokes most admire. What is a bloke you might ask? The word 'Bloke' is essentially the same as 'man' but in a more casual way. We focused on traits that we believe will lead to nostalgia, happiness and resemblance!",
+      answer:
+        "The characters represent human traits that Australian Blokes most admire. What is a bloke you might ask? The word 'Bloke' is essentially the same as 'man' but in a more casual way. We focused on traits that we believe will lead to nostalgia, happiness and resemblance!",
     },
     {
       question: "HOW TO BUY?",
@@ -33,7 +35,13 @@ const index = () => {
       <div className="w-full h-screen fixed overflow-scroll top-0 flex justify-center items-start -z-10 bg-black bg-opacity-0 backdrop-blur-[2px] backdrop-filter">
         <div className="w-full px-10 max-w-[1200px] pt-60 flex flex-col justify-start items-start">
           <div className="max-w-[600px] relative w-full h-[150px] px-10">
-            <Image src={Header} loading="eager" alt="header" fill className="object-contain" />
+            <Image
+              src={Header}
+              loading="eager"
+              alt="header"
+              fill
+              className="object-contain"
+            />
           </div>
           <div className="pb-20 w-full flex justify-start pt-20 items-center flex-col">
             <div className="px-[20px]">
@@ -49,7 +57,7 @@ const index = () => {
                       }
                     }}
                     className={` border-t-[2px] cursor-pointer border-black max-w-[1200px] py-10 mt-0 w-full  mb-5 overflow-clip transition-all duration-300
-                    ${ open === index ? "h-max" : "h-0" }
+                    ${open === index ? "h-max" : "h-0"}
                     `}
                   >
                     <div
@@ -71,7 +79,7 @@ const index = () => {
                           }}
                         >
                           <Image
-                            src={Plus} 
+                            src={Plus}
                             loading="eager"
                             alt="plus"
                             fill
@@ -96,7 +104,8 @@ const index = () => {
         <div className="w-full h-full relative rotate-0 lg:rotate-90">
           <div className="h-80 w-full absolute top-[-240px] lg:top-[-40%]">
             <Image
-              src={TopMeat} loading="eager"
+              src={TopMeat}
+              loading="eager"
               className="object-contain"
               fill
               alt="background"
@@ -104,7 +113,8 @@ const index = () => {
           </div>
           <div className="h-80 w-full absolute bottom-[-120px] lg:bottom-[-40%]">
             <Image
-              src={BottomMeat} loading="eager"
+              src={BottomMeat}
+              loading="eager"
               className="object-contain"
               fill
               alt="background"
@@ -112,7 +122,8 @@ const index = () => {
           </div>
         </div>
         <Image
-          src={BackgroundMeat} loading="eager"
+          src={BackgroundMeat}
+          loading="eager"
           className="object-cover absolute -z-50"
           fill
           alt="background"

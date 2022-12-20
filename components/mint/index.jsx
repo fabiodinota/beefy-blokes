@@ -77,7 +77,7 @@ const index = () => {
                       className="cursor-pointer relative h-5 w-5"
                       onClick={() => handleIncrease()}
                     >
-                      <Image  loading="eager" src={Plus} fill alt="plus" />
+                      <Image loading="eager" src={Plus} fill alt="plus" />
                     </div>
                   </div>
                   <div
@@ -100,7 +100,8 @@ const index = () => {
             <div className="h-80 w-full absolute top-[-190px] lg:top-[-40%]">
               {" "}
               {/* container for each meats */}
-              <Image loading="eager"
+              <Image
+                loading="eager"
                 src={TopMeat}
                 className="object-contain"
                 fill
@@ -111,7 +112,8 @@ const index = () => {
             <div className="h-80 w-full absolute bottom-[-190px] lg:bottom-[-40%]">
               {" "}
               {/* container for each meats */}
-              <Image loading="eager"
+              <Image
+                loading="eager"
                 src={BottomMeat}
                 className="object-contain"
                 fill
@@ -120,7 +122,8 @@ const index = () => {
               {/* image for each meat */}
             </div>
           </div>
-          <Image loading="eager"
+          <Image
+            loading="eager"
             src={BackgroundMeat}
             className="object-cover absolute -z-50"
             fill
