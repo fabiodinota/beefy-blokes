@@ -10,7 +10,7 @@ import Arrow from "../../public/images/arrow.png";
 
 const index = () => {
   return (
-    <Layout title="Home">
+    <Layout title="Home" show={true}>
       <div className=" pt-40 relative h-full flex flex-col justify-center items-center">
         {/* <div
           className={` rounded-3xl overflow-hidden mb-40 relative w-[90%]`}

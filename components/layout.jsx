@@ -83,7 +83,7 @@ const Layout = ({ children, title, background, show }) => {
         <NavBar />
       </header>
       <main>{children}</main>
-      <footer className={`${show ? "" : "hidden" || ""}`}>
+      <footer className={`${show ? "" : "hidden"}`}>
         <Mark background={background} />
       </footer>
     </motion.div>
