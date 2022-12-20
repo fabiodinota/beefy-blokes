@@ -14,8 +14,11 @@ import Link from "next/link";
 const index = () => {
   return (
     <Layout title="Team" background={"white"}>
-      <div className="w-full xl:h-screen absolute xl:fixed top-0 flex justify-center items-center -z-10 bg-white bg-opacity-0 backdrop-blur-[2px] backdrop-filter">
-        <div className="w-full px-10 max-w-[1200px] pt-60 xl:space-x-16 flex flex-col xl:flex-row justify-around xl:justify-center items-center">
+      <div className="w-full xl:h-screen absolute xl:fixed top-0 flex justify-center flex-col items-center -z-10 bg-white bg-opacity-0 backdrop-blur-[2px] backdrop-filter">
+        <div className="max-w-[800px] relative top-60 xl:top-48 w-full h-[180px] px-10">
+            <Image src={Meet} loading="eager" alt="header" fill className="object-contain" />
+          </div>
+        <div className="w-full px-10 max-w-[1200px] pt-72 xl:pt-60 xl:space-x-16 flex flex-col xl:flex-row justify-around xl:justify-center items-center">
           <div className="">
             <div className="relative grid h-80 w-80">
               <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">

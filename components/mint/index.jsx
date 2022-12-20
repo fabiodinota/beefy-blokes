@@ -46,10 +46,10 @@ const index = () => {
           />
 
         </div> */}
-        <div className="relative w-[90%] h-[800px] overflow-hidden rounded-2xl">
+        <div className="relative w-[90%] h-[620px] overflow-hidden rounded-2xl">
           {" "}
           {/* container for whole meats section */}
-          <div className="w-full h-full absolute z-[100] scale-100 sm:scale-125 flex justify-center items-center flex-col">
+          <div className="w-full h-full absolute z-[100] scale-100 sm:scale-115 flex justify-center items-center flex-col">
             <div className="w-[300px] relative h-[300px]">
               <Image loading="eager" src={Bloke} fill alt="bloke" />
             </div>
@@ -97,7 +97,7 @@ const index = () => {
           <div className="w-full h-full relative rotate-0 lg:rotate-90">
             {" "}
             {/* container for both meats */}
-            <div className="h-80 w-full absolute top-[-120px] lg:top-[-40%]">
+            <div className="h-80 w-full absolute top-[-190px] lg:top-[-40%]">
               {" "}
               {/* container for each meats */}
               <Image loading="eager"
@@ -108,7 +108,7 @@ const index = () => {
               />{" "}
               {/* image for each meat */}
             </div>
-            <div className="h-80 w-full absolute bottom-[-120px] lg:bottom-[-40%]">
+            <div className="h-80 w-full absolute bottom-[-190px] lg:bottom-[-40%]">
               {" "}
               {/* container for each meats */}
               <Image loading="eager"
@@ -127,7 +127,7 @@ const index = () => {
             alt="background"
           />
         </div>
-        <div className="w-[85%] flex flex-col sm:flex-row justify-center sm:justify-between items-start sm:items-center py-10 pb-20">
+        <div className="w-[85%] flex flex-col sm:flex-row justify-center sm:justify-between items-start sm:items-center py-10">
           <p className="sm:pr-10 w-full whitespace-pre-line">
             Your Bloke will range from a Boxing Kangaroo to a Barbeque King.
             <br className="hidden sm:block" />

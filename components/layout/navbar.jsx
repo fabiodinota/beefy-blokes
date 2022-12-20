@@ -3,12 +3,17 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../../public/images/beefy-logo.webp";
 import { useRouter } from "next/router";
-import Opensea from "../../public/images/opensea.webp";
+import Opensea from "../../public/images/opensea.png";
 import Menu from "../../public/images/menu.webp";
 import CloseMenu from "../../public/images/close.webp";
 import Logo_nav from "../../public/images/Logo_nav.webp";
-import Twitter from "../../public/images/Twitter.webp";
-import Discord from "../../public/images/Discord.webp";
+import TwitterM from "../../public/images/Twitter.webp";
+import DiscordM from "../../public/images/Discord.webp";
+import OpenseaHovered from "../../public/images/opensea_hovered.png";
+import TwitterHovered from "../../public/images/twitter_hovered.png";
+import DiscordHovered from "../../public/images/discord hovered.png";
+import Twitter from "../../public/images/twitter.png";
+import Discord from "../../public/images/discord.png";
 
 const NavBar = () => {
   const router = useRouter();
@@ -91,20 +96,6 @@ const NavBar = () => {
                 }`}
               ></span>
             </li>
-            <li className="text-[20px] cursor-pointer relative flex justify-center group">
-              <Link href={links.twitter.link}>{links.twitter.name}</Link>
-              <span
-                className={`h-[1px] bg-black absolute bottom-0 transition-all duration-300 origin-left w-[0%] group-hover:w-[100%]
-                `}
-              ></span>
-            </li>
-            <li className="text-[20px] cursor-pointer group relative flex justify-center group">
-              <Link href={links.discord.link}>{links.discord.name}</Link>
-              <span
-                className={`h-[1px] bg-black absolute bottom-0 transition-all duration-300 origin-left w-[0%] group-hover:w-[100%]
-                `}
-              ></span>
-            </li>
           </ul>
 
           <div
@@ -175,7 +166,7 @@ const NavBar = () => {
                     }`}
                   >
                     <div className="w-6 h-6 mr-3 mt-[2px] relative">
-                      <Image loading="eager" src={Twitter} fill alt="twitter" />
+                      <Image loading="eager" src={TwitterM} fill alt="twitter" />
                     </div>
                     {links.twitter.name}
                   </li>
@@ -189,13 +180,13 @@ const NavBar = () => {
                     }`}
                   >
                     <div className="w-6 h-6 mr-3 mt-[2px] relative">
-                      <Image loading="eager" src={Discord} fill alt="twitter" />
+                      <Image loading="eager" src={DiscordM} fill alt="twitter" />
                     </div>
                     {links.discord.name}
                   </li>
                 </Link>
                 <Link
-                  className="sm:hidden group w-full py-2"
+                  className=" group w-full py-2"
                   href={links.opensea.link}
                 >
                   <li className="nav text-black py-4 rounded-2xl text-[20px] group-hover:bg-gray-100 group-hover:text-gray-900 pl-5">
@@ -215,11 +206,20 @@ const NavBar = () => {
             <Image loading="eager" fill src={Menu} alt="menuicon" />
           </button>
         </div>
-        <div className="pr-[130px] hidden sm:flex w-max flex-row justify-center items-center space-x-4">
-          <div className="w-16 aspect-square cursor-pointer relative outline-2 outline-red-500">
-            <Image loading="eager" src={Opensea} className="z-10" fill alt="Opensea" />
+        <div className="pr-[130px] hidden md:flex flex-row justify-center items-center space-x-4">
+        <div className="w-12 aspect-square cursor-pointer relative outline-2 outline-red-500">
+            <Image loading="eager" quality={100} src={Twitter} className="z-10" fill alt="Opensea" />
+            <Image loading="eager" quality={100} src={TwitterHovered} className="z-10 duration-500 hover:opacity-100 opacity-0" fill alt="Opensea" />
           </div>
-          <button className="text-black border-[1.7px] hover:bg-black hover:text-white active:bg-gray-700 transition-color duration-300 border-black bg-white px-5 py-2 w-full rounded-full whitespace-nowrap nav">
+          <div className="w-12 aspect-square cursor-pointer relative outline-2 outline-red-500">
+            <Image loading="eager" quality={100} src={Discord} className="z-10" fill alt="Opensea" />
+            <Image loading="eager" quality={100} src={DiscordHovered} className="z-10 duration-500 hover:opacity-100 opacity-0" fill alt="Opensea" />
+          </div>
+          <div className="w-12 aspect-square cursor-pointer relative outline-2 outline-red-500">
+            <Image loading="eager" quality={100} src={Opensea} className="z-10" fill alt="Opensea" />
+            <Image loading="eager" quality={100} src={OpenseaHovered} className="z-10 duration-500 hover:opacity-100 opacity-0" fill alt="Opensea" />
+          </div>
+          <button className="text-black border-[1.7px] hover:bg-black hover:text-white active:bg-gray-700 transition-color duration-300 border-black bg-white px-8 py-2 h-12 rounded-full whitespace-nowrap nav">
             Connect wallet
           </button>
         </div>

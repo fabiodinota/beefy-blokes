@@ -6,7 +6,7 @@ import BottomMeat from "../../public/images/bottom_meat.webp";
 import BackgroundMeat from "../../public/images/background_meat.webp";
 import Link from "next/link";
 import Wordmark from "../../public/images/wordmark.webp";
-import Arrow from "../../public/images/arrow.webp";
+import Arrow from "../../public/images/arrow.png";
 
 const index = () => {
   return (
@@ -39,19 +39,20 @@ const index = () => {
             <p className="py-5 text-white text-[20px] px-5 text-center">
               1500 NFT’s that embody Aussie culture, with unique Aussie traits.
             </p>
-            <button className="bg-black text-white font-extrabold rounded-full p-5 sm:text-[22px] px-3 text-[18px] cursor-pointer">
+            <button className="bg-black text-white hover:bg-transparent border-4 border-black hover:text-black duration-300 font-bold rounded-full p-5 sm:text-[22px] px-8 text-[18px] cursor-pointer">
               <Link href="/mint">
                 MINT YOUR BLOKE{" "}
-                <span className="relative w-5 h-3">
-                  <Image fill loading="eager" src={Arrow} alt="arrow" />
-                </span>
+               
               </Link>
             </button>
             <Link
-              className="text-[18px] py-4 cursor-pointer"
+              className="text-[18px] py-4 cursor-pointer flex flex-row justify-center items-center gap-2 hover:gap-4 duration-300"
               href="https://google.com"
             >
               See Marketplace
+              <span className="relative w-6 h-5">
+                <Image fill loading="eager" src={Arrow} alt="arrow" />
+              </span>
             </Link>
           </div>
 

@@ -29,23 +29,23 @@ const Layout = ({ children, title, background }) => {
           href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap"
           rel="stylesheet"
         />
-        <link rel="shortcut icon" href="/images/beefy-logo.jpg" />
+        <link rel="shortcut icon" href="/images/beefy-logo.webp" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/images/beefy-logo.jpg"
+          href="/images/beefy-logo.webp"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/images/beefy-logo.jpg"
+          href="/images/beefy-logo.webp"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/images/beefy-logo.jpg"
+          href="/images/beefy-logo.webp"
         />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
