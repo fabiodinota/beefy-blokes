@@ -14,6 +14,7 @@ import TwitterHovered from "../../public/images/twitter_hovered.png";
 import DiscordHovered from "../../public/images/discord hovered.png";
 import Twitter from "../../public/images/twitter.png";
 import Discord from "../../public/images/discord.png";
+import Background from "../../public/images/gradient.webp";
 
 const NavBar = () => {
   const router = useRouter();
@@ -63,8 +64,8 @@ const NavBar = () => {
               <Image
                 loading="eager"
                 src={Logo}
-                width={120}
-                height={120}
+                width={100}
+                height={100}
                 alt="Logo"
               />
             </Link>
@@ -109,7 +110,7 @@ const NavBar = () => {
               isOpen ? "left-0" : "left-[-100%] "
             } fixed transition-all duration-500 z-[9999] top-0 xl:hidden  justify-start items-center flex overflow-hidden`}
           >
-            <div className="w-[80%] gradient relative h-screen rounded-r-3xl">
+            <div className="w-[80%] relative h-screen rounded-r-3xl">
               <button
                 onClick={() => setIsOpen(false)}
                 className={`absolute right-[-30px] top-40 h-[60px] w-[60px]`}
@@ -211,6 +212,9 @@ const NavBar = () => {
               <button className="text-black bg-white  hover:bg-black hover:text-white active:bg-gray-700 duration-300 py-4 w-[90%] ml-[5%] z-50 absolute bottom-5 rounded-[20px] whitespace-nowrap text-[20px]">
                 Connect wallet
               </button>
+              <div className="w-[80%] h-full fixed -z-10">
+                <Image src={Background} loading="eager" alt="background" fill className="object-cover  rounded-r-3xl" />
+              </div>
             </div>
           </div>
           <button

@@ -46,7 +46,7 @@ const index = () => {
           />
 
         </div> */}
-        <div className="relative w-[90%] h-[620px] overflow-hidden rounded-2xl">
+        <div className="relative w-[90%] h-[670px] overflow-hidden rounded-2xl">
           {" "}
           {/* container for whole meats section */}
           <div className="w-full h-full absolute z-[100] scale-100 sm:scale-115 flex justify-center items-center flex-col">
@@ -136,11 +136,7 @@ const index = () => {
             <br className="hidden sm:block" />
             Whatever your Bloke is, it will embody YOU.
           </p>
-          <p className="whitespace-nowrap pt-10 sm:pt-0">
-            STAY BEEFY! STAY BEEFY!
-            <br />
-            STAY BEEFY! STAY BEEFY!
-            <br />
+          <p className="whitespace-nowrap hidden sm:block">
             STAY BEEFY! STAY BEEFY!
             <br />
             STAY BEEFY! STAY BEEFY!

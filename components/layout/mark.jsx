@@ -13,7 +13,7 @@ const Mark = ({ background }) => {
 
   return (
     <div
-      className={`fixed bg-black bottom-0 right-0 ${checkBackground()} h-10 w-max  px-4 flex justify-center items-center rounded-tl-2xl`}
+      className={`fixed bg-black bottom-0 right-0 ${checkBackground()} h-10 w-max z-[50]  px-4 flex justify-center items-center rounded-tl-2xl`}
     >
       <p
         className={`${
