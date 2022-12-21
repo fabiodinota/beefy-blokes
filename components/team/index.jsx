@@ -5,17 +5,21 @@ import TopMeat from "../../public/images/top_meat.webp";
 import BottomMeat from "../../public/images/bottom_meat.webp";
 import BackgroundMeat from "../../public/images/background_meat.webp";
 import Twitter from "../../public/images/twitter_team.webp";
-import Jackson from "../../public/images/jackson.webp";
-import Luis from "../../public/images/luis.webp";
-import Hughezy from "../../public/images/hughezy.webp";
+import Jackson from "../../public/images/jackson.png";
+import Luis from "../../public/images/luis.png";
+import Hughezy from "../../public/images/hughes.png";
 import Meet from "../../public/images/meet.webp";
 import Link from "next/link";
+import Bonglo from "../../public/images/bonglo.png";
+import Yulian from "../../public/images/dominic.png";
+import Dominic from "../../public/images/yulian.png";
+
 
 const index = () => {
   return (
     <Layout title="Team" background={"white"} show={false}>
-      <div className="w-full xl:h-screen absolute xl:fixed top-0 flex justify-center flex-col items-center -z-10 bg-white bg-opacity-0 backdrop-blur-[2px] backdrop-filter">
-        <div className="max-w-[800px] relative top-60 xl:top-48 w-full h-[180px] px-10">
+      <div className="w-full absolute top-0 flex justify-center flex-col items-center -z-10 bg-white bg-opacity-0 backdrop-blur-[2px] backdrop-filter">
+        <div className="max-w-[800px] relative mt-60 w-full h-[180px] px-10">
           <Image
             src={Meet}
             loading="eager"
@@ -24,7 +28,8 @@ const index = () => {
             className="object-contain"
           />
         </div>
-        <div className="w-full px-10 max-w-[1200px] pt-72 xl:pt-60 xl:space-x-16 flex flex-col xl:flex-row justify-around xl:justify-center items-center">
+        <div className="grid max-w-[1220px] w-full gap-x-20 gap-y-10 px-10 pb-20 grid-container place-content-center place-items-center">
+
           <div className="">
             <div className="relative grid h-80 w-80">
               <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">
@@ -98,11 +103,86 @@ const index = () => {
                 alt="pfp"
               />
             </div>
-            <p className="text-center text-3xl pt-4">Hughezy</p>
+            <p className="text-center text-3xl pt-4">Daniel Hughez</p>
             <p className="text-center text-2xl font-extrabold py-2">
               Co-Founder
             </p>
             <p className="text-center text-base py-2">Lawyer / Marketer</p>
+          </div>
+          <div className="">
+            <div className="relative grid h-80 w-80">
+              <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">
+                <Link href="https://twitter.com">
+                  <Image
+                    loading="eager"
+                    src={Twitter}
+                    fill
+                    className="object-contain"
+                    alt="twitter"
+                  />
+                </Link>
+              </div>
+              <Image
+                loading="eager"
+                src={Bonglo}
+                fill
+                className="object-contain"
+                alt="pfp"
+              />
+            </div>
+            <p className="text-center text-3xl pt-4">Bonglo.ETH</p>
+            <p className="text-center text-2xl font-extrabold py-2">Project Manager</p>
+            <p className="text-center text-base py-2">Project Manager at Beefy Blokes</p>
+          </div>
+          <div className="">
+            <div className="relative grid h-80 w-80">
+              <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">
+                <Link href="https://twitter.com">
+                  <Image
+                    loading="eager"
+                    src={Twitter}
+                    fill
+                    className="object-contain"
+                    alt="twitter"
+                  />
+                </Link>
+              </div>
+              <Image
+                loading="eager"
+                src={Yulian}
+                fill
+                className="object-contain"
+                alt="pfp"
+              />
+            </div>
+            <p className="text-center text-3xl pt-4">Yulian</p>
+            <p className="text-center text-2xl font-extrabold py-2">Artist</p>
+            <p className="text-center text-base py-2">Illustrator & Graphic Designer</p>
+          </div>
+          <div className="">
+            <div className="relative grid h-80 w-80">
+              <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">
+                <Link href="https://twitter.com">
+                  <Image
+                    loading="eager"
+                    src={Twitter}
+                    fill
+                    className="object-contain"
+                    alt="twitter"
+                  />
+                </Link>
+              </div>
+              <Image
+                loading="eager"
+                src={Dominic}
+                fill
+                className="object-contain"
+                alt="pfp"
+              />
+            </div>
+            <p className="text-center text-3xl pt-4">Dominic</p>
+            <p className="text-center text-2xl font-extrabold py-2">Creative Director</p>
+            <p className="text-center text-base py-2">Creative Director at Beefy Blokes</p>
           </div>
         </div>
       </div>

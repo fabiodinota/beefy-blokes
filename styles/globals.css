@@ -41,4 +41,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
   }
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(0, 316px));
+  }
 }
