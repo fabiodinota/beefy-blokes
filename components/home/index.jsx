@@ -5,7 +5,7 @@ import TopMeat from "../../public/images/top_meat.webp";
 import BottomMeat from "../../public/images/bottom_meat.webp";
 import BackgroundMeat from "../../public/images/background_meat.webp";
 import Link from "next/link";
-import Wordmark from "../../public/images/wordmark.webp";
+import Wordmark from "../../public/images/wordmark.png";
 import Arrow from "../../public/images/arrow.png";
 
 const index = () => {
@@ -33,7 +33,7 @@ const index = () => {
           {" "}
           {/* container for whole meats section */}
           <div className="w-full h-full absolute z-[100] flex justify-center items-center flex-col">
-            <div className="relative w-[300px] h-[180px] lg:w-[550px] lg:h-[300px]">
+            <div className="relative w-[300px] h-[180px] p-10 scale-90 lg:w-[550px] lg:h-[300px]">
               <Image src={Wordmark} alt="wordmark" fill />
             </div>
             <p className="py-5 text-white text-[20px] px-5 text-center">
