@@ -62,10 +62,10 @@ const index = () => {
                   >
                     <div
                       className={`max-w-[1200px] w-full origin-top transition-all duration-200 text-black
-                     relative font-bold flex text-3xl flex-col justify-center items-start`}
+                     relative font-bold flex flex-col justify-center items-start`}
                     >
-                      <div className="flex flex-row justify-between text-[40px] w-full">
-                        <p>{item.question}</p>
+                      <div className="flex flex-row justify-between w-full">
+                        <p className="whitespace-nowrap  text-[30px] leading-10 pr-4 sm:text-[40px] h-10">{item.question}</p>
                         <div
                           className={`cursor-pointer transition-all duration-300 origin-center relative w-7 h-7 ${
                             open === index ? "rotate-[225deg]" : "rotate-0"

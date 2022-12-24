@@ -14,7 +14,7 @@ import socceroo from "../../public/images/socceroo.webp";
 
 const index = () => {
   return (
-    <Layout title="About Us" background="white" show={true}>
+    <Layout title="About" background="white" show={true}>
       <div className="w-full h-max absolute top-0 flex justify-center items-start -z-10 bg-black bg-opacity-0 backdrop-blur-[2px] backdrop-filter">
         <div className="w-full px-10 overflow-hidden pt-60 flex flex-col justify-center items-center">
           <div className="max-w-[600px] relative w-full h-[150px] px-10">
