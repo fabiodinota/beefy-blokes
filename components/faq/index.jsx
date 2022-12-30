@@ -56,7 +56,7 @@ const index = () => {
                         setOpen(index);
                       }
                     }}
-                    className={` border-t-[2px] cursor-pointer border-black max-w-[1200px] py-10 mt-0 w-full  mb-5 overflow-clip transition-all duration-300
+                    className={` border-t-[2px] cursor-pointer border-black max-w-[1200px] py-10 mt-0 w-full overflow-hidden mb-5 transition-all duration-300
                     ${open === index ? "h-max" : "h-0"}
                     `}
                   >
