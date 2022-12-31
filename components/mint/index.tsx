@@ -27,7 +27,7 @@ const index = () => {
     }
   };
   return (
-    <Layout title="Mint" show={true}>
+    <Layout background="black" title="Mint" show={true}>
       <div className=" pt-40 relative flex flex-col justify-center items-center">
         {/* <div
           className={` rounded-3xl overflow-hidden mb-40 relative w-[90%]`}

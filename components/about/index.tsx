@@ -51,7 +51,7 @@ const index = () => {
                 <br />
                 <br />
                 For example, He’s an Aussie man... sounds weird right? But he’s
-                an Aussie Bloke. Well that fits like a glove. 
+                an Aussie Bloke. Well that fits like a glove.
                 <br />
                 <br />
                 Your Bloke will range from a Boxing Kangaroo to a Barbeque King.

@@ -4,7 +4,14 @@ import Head from "next/head";
 import NavBar from "./layout/navbar";
 import { motion } from "framer-motion";
 
-const Layout = ({ children, title, background, show }) => {
+interface LayoutProps {
+  children: React.ReactNode;
+  title: string;
+  background: string | undefined;
+  show: boolean;
+}
+
+const Layout = ({ children, title, background, show }: LayoutProps) => {
   const variants = {
     initial: { opacity: 0, scale: 0.995, blur: 0 },
     animate: { opacity: 1, scale: 1, blur: 100 },
@@ -23,12 +30,6 @@ const Layout = ({ children, title, background, show }) => {
         <title>Beefy Blokes - {title}</title>
         <meta charSet="utf-8" />
         <meta name="referrer" content="origin" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap"
-          rel="stylesheet"
-        />
         <link rel="shortcut icon" href="/images/beefy-logo.webp" />
         <link
           rel="apple-touch-icon"
@@ -84,7 +85,7 @@ const Layout = ({ children, title, background, show }) => {
       </header>
       <main>{children}</main>
       <footer className={`${show ? "" : "hidden"}`}>
-        <Mark background={background} />
+        <Mark background={background!} />
       </footer>
     </motion.div>
   );

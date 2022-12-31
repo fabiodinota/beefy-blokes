@@ -1,6 +1,10 @@
 import React from "react";
 
-const Mark = ({ background }) => {
+interface MarkProps {
+  background: string;
+}
+
+const Mark: React.FC<MarkProps> = ({ background }) => {
   const backgroundValue = background;
 
   const checkBackground = () => {
