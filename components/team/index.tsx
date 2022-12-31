@@ -1,18 +1,15 @@
 import Image from "next/image";
 import React from "react";
 import Layout from "../layout";
-import TopMeat from "../../public/images/top_meat.webp";
-import BottomMeat from "../../public/images/bottom_meat.webp";
-import BackgroundMeat from "../../public/images/background_meat.webp";
-import Twitter from "../../public/images/twitter_team.webp";
 import Jackson from "../../public/images/jackson.png";
 import Luis from "../../public/images/luis.png";
 import Hughezy from "../../public/images/hughes.png";
 import Meet from "../../public/images/meet.webp";
-import Link from "next/link";
 import Bonglo from "../../public/images/bonglo.png";
 import Yulian from "../../public/images/dominic.png";
 import Dominic from "../../public/images/yulian.png";
+import Background from "../layout/background";
+import TeamComponent from "./TeamComponent";
 
 
 const index = () => {
@@ -29,192 +26,27 @@ const index = () => {
           />
         </div>
         <div className="grid max-w-[1220px] w-full gap-x-20 gap-y-10 px-10 pb-20 grid-container place-content-center place-items-center">
-
-          <div className="">
-            <div className="relative grid h-80 w-80">
-              <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">
-                <Link href="https://twitter.com">
-                  <Image
-                    loading="eager"
-                    src={Twitter}
-                    fill
-                    className="object-contain"
-                    alt="twitter"
-                  />
-                </Link>
-              </div>
-              <Image
-                loading="eager"
-                src={Jackson}
-                fill
-                className="object-contain"
-                alt="pfp"
-              />
-            </div>
-            <p className="text-center text-3xl pt-4">Jackson Meji</p>
-            <p className="text-center text-2xl font-extrabold py-2">Founder</p>
-            <p className="text-center text-base py-2">Founder of Mejia Labs</p>
+          <div>
+            <TeamComponent ImageSrc={Jackson} name="Jackson Meji" role="Founder" description="Founder of Mejia Labs" twitter="https://twitter.com" />
           </div>
-          <div className="">
-            <div className="relative grid h-80 w-80">
-              <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">
-                <Link href="https://twitter.com">
-                  <Image
-                    loading="eager"
-                    src={Twitter}
-                    fill
-                    className="object-contain"
-                    alt="twitter"
-                  />
-                </Link>
-              </div>
-              <Image
-                loading="eager"
-                src={Luis}
-                fill
-                className="object-contain"
-                alt="pfp"
-              />
-            </div>
-            <p className="text-center text-3xl pt-4">Luis Morzone</p>
-            <p className="text-center text-2xl font-extrabold py-2">
-              Co-Founder
-            </p>
-            <p className="text-center text-base py-2">Lawyer / Marketer</p>
+          <div>
+            <TeamComponent ImageSrc={Luis} name="Luis Morzone" role="Co-Founder" description="Lawyer / Marketer" twitter="https://twitter.com" />
           </div>
-          <div className="pb-20 xl:pb-0">
-            <div className="relative grid h-80 w-80">
-              <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">
-                <Link href="https://twitter.com">
-                  <Image
-                    loading="eager"
-                    src={Twitter}
-                    fill
-                    className="object-contain"
-                    alt="twitter"
-                  />
-                </Link>
-              </div>
-              <Image
-                loading="eager"
-                src={Hughezy}
-                fill
-                className="object-contain"
-                alt="pfp"
-              />
-            </div>
-            <p className="text-center text-3xl pt-4">Daniel Hughez</p>
-            <p className="text-center text-2xl font-extrabold py-2">
-              Co-Founder
-            </p>
-            <p className="text-center text-base py-2">Lawyer / Marketer</p>
+          <div>
+            <TeamComponent ImageSrc={Hughezy} name="Daniel Hughez" role="Co-Founder" description="Lawyer / Marketer" twitter="https://twitter.com" />
           </div>
-          <div className="">
-            <div className="relative grid h-80 w-80">
-              <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">
-                <Link href="https://twitter.com">
-                  <Image
-                    loading="eager"
-                    src={Twitter}
-                    fill
-                    className="object-contain"
-                    alt="twitter"
-                  />
-                </Link>
-              </div>
-              <Image
-                loading="eager"
-                src={Bonglo}
-                fill
-                className="object-contain"
-                alt="pfp"
-              />
-            </div>
-            <p className="text-center text-3xl pt-4">Bonglo.ETH</p>
-            <p className="text-center text-2xl font-extrabold py-2">Project Manager</p>
-            <p className="text-center text-base py-2">Project Manager at Beefy Blokes</p>
+          <div>
+            <TeamComponent ImageSrc={Bonglo} name="Bonglo.ETH" role="Project Manager" description="Project Manager at Beefy Blokes" twitter="https://twitter.com" />
           </div>
-          <div className="">
-            <div className="relative grid h-80 w-80">
-              <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">
-                <Link href="https://twitter.com">
-                  <Image
-                    loading="eager"
-                    src={Twitter}
-                    fill
-                    className="object-contain"
-                    alt="twitter"
-                  />
-                </Link>
-              </div>
-              <Image
-                loading="eager"
-                src={Yulian}
-                fill
-                className="object-contain"
-                alt="pfp"
-              />
-            </div>
-            <p className="text-center text-3xl pt-4">Yulian</p>
-            <p className="text-center text-2xl font-extrabold py-2">Artist</p>
-            <p className="text-center text-base py-2">Illustrator & Graphic Designer</p>
+          <div>
+            <TeamComponent ImageSrc={Yulian} name="Yulian" role="Artist" description="Illustrator & Graphic Designer" twitter="https://twitter.com" />
           </div>
-          <div className="">
-            <div className="relative grid h-80 w-80">
-              <div className="relative place-self-center self-end z-20 w-[70px] h-[70px] ">
-                <Link href="https://twitter.com">
-                  <Image
-                    loading="eager"
-                    src={Twitter}
-                    fill
-                    className="object-contain"
-                    alt="twitter"
-                  />
-                </Link>
-              </div>
-              <Image
-                loading="eager"
-                src={Dominic}
-                fill
-                className="object-contain"
-                alt="pfp"
-              />
-            </div>
-            <p className="text-center text-3xl pt-4">Dominic</p>
-            <p className="text-center text-2xl font-extrabold py-2">Creative Director</p>
-            <p className="text-center text-base py-2">Creative Director at Beefy Blokes</p>
+          <div>
+            <TeamComponent ImageSrc={Dominic} name="Dominic" role="Creative Director" description="Creative Director at Beefy Blokes" twitter="https://twitter.com" />
           </div>
         </div>
       </div>
-      <div className="w-screen h-screen fixed -z-20 overflow-hidden pt-40 rounded-2xl">
-        <div className="w-full h-full relative rotate-0 lg:rotate-90">
-          <div className="h-80 w-full absolute top-[-240px] lg:top-[-40%]">
-            <Image
-              loading="eager"
-              src={TopMeat}
-              className="object-contain"
-              fill
-              alt="background"
-            />
-          </div>
-          <div className="h-80 w-full absolute bottom-[-120px] lg:bottom-[-40%]">
-            <Image
-              loading="eager"
-              src={BottomMeat}
-              className="object-contain"
-              fill
-              alt="background"
-            />
-          </div>
-        </div>
-        <Image
-          loading="eager"
-          src={BackgroundMeat}
-          className="object-cover absolute -z-50"
-          fill
-          alt="background"
-        />
-      </div>
+      <Background />
     </Layout>
   );
 };

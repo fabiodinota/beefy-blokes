@@ -44,4 +44,8 @@ body {
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(0, 316px));
   }
+
+  .featured-nft{
+    @apply w-80 h-80 flex-shrink-0 relative
+  }
 }

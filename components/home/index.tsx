@@ -1,35 +1,17 @@
 import React, { useState } from "react";
 import Layout from "../layout";
 import Image from "next/image";
-import TopMeat from "../../public/images/top_meat.webp";
-import BottomMeat from "../../public/images/bottom_meat.webp";
-import BackgroundMeat from "../../public/images/background_meat.webp";
+
 import Link from "next/link";
 import Wordmark from "../../public/images/wordmark.png";
 import Arrow from "../../public/images/arrow.png";
+import BackgroundVariant from "../layout/background_variant";
 
 const index = () => {
   return (
     <Layout background="black" title="Home" show={true}>
       <div className=" pt-40 relative h-full flex flex-col justify-center items-center">
-        {/* <div
-          className={` rounded-3xl overflow-hidden mb-40 relative w-[90%]`}
-        >
-          <Image
-            src={Background}
-            className="object-cover hidden lg:block"
-            fill
-            alt="background"
-          />
-          <Image
-            src={Background_small}
-            className="object-cover lg:hidden"
-            fill
-            alt="background"
-          />
-
-        </div> */}
-        <div className="relative w-[90%] h-[670px] overflow-hidden rounded-2xl">
+        <BackgroundVariant>{/* Background container */}
           {" "}
           {/* container for whole meats section */}
           <div className="w-full h-full absolute z-[30] flex justify-center items-center flex-col">
@@ -54,43 +36,8 @@ const index = () => {
               </span>
             </Link>
           </div>
-          <div className="w-full h-full relative rotate-0 lg:rotate-90">
-            {" "}
-            {/* container for both meats */}
-            <div className="h-80 w-full absolute top-[-120px] lg:top-[-50%]">
-              {" "}
-              {/* container for each meats */}
-              <Image
-                src={TopMeat}
-                className="object-contain"
-                loading="eager"
-                fill
-                alt="background"
-              />{" "}
-              {/* image for each meat */}
-            </div>
-            <div className="h-80 w-full absolute bottom-[-120px] lg:bottom-[-50%]">
-              {" "}
-              {/* container for each meats */}
-              <Image
-                src={BottomMeat}
-                className="object-contain"
-                loading="eager"
-                fill
-                alt="background"
-              />{" "}
-              {/* image for each meat */}
-            </div>
-          </div>
-          <Image
-            src={BackgroundMeat}
-            loading="eager"
-            className="object-cover absolute -z-50"
-            fill
-            alt="background"
-          />
-        </div>
-        <div className="w-[85%] flex flex-row justify-between items-center py-10 ">
+        </BackgroundVariant>
+        <div className="w-[85%] flex flex-row justify-between items-center py-10 "> {/* Bottom text container */}
           <p className="pr-10">
             Your Bloke will range from a Boxing Kangaroo to a Barbeque King.
             <br />

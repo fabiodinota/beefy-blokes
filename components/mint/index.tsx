@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import Layout from "../layout";
 import Image from "next/image";
-import TopMeat from "../../public/images/top_meat.webp";
-import BottomMeat from "../../public/images/bottom_meat.webp";
-import BackgroundMeat from "../../public/images/background_meat.webp";
 import Plus from "../../public/images/plus.webp";
 import Minus from "../../public/images/minus.webp";
 import Bloke from "../../public/images/bloke.webp";
+import BackgroundVariant from "../layout/background_variant";
 
 const index = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -29,25 +27,7 @@ const index = () => {
   return (
     <Layout background="black" title="Mint" show={true}>
       <div className=" pt-40 relative flex flex-col justify-center items-center">
-        {/* <div
-          className={` rounded-3xl overflow-hidden mb-40 relative w-[90%]`}
-        >
-          <Image
-            src={Background}
-            className="object-cover hidden lg:block"
-            fill
-            alt="background"
-          />
-          <Image
-            src={Background_small}
-            className="object-cover lg:hidden"
-            fill
-            alt="background"
-          />
-
-        </div> */}
-        <div className="relative w-[90%] h-[670px] overflow-hidden rounded-2xl">
-          {" "}
+        <BackgroundVariant> {/* Background container */}
           {/* container for whole meats section */}
           <div className="w-full h-full absolute z-[100] scale-100 sm:scale-115 flex justify-center items-center flex-col">
             <div className="w-[300px] relative h-[300px]">
@@ -94,42 +74,7 @@ const index = () => {
               BEEFY BLOKES MINTED
             </p>
           </div>
-          <div className="w-full h-full relative rotate-0 lg:rotate-90">
-            {" "}
-            {/* container for both meats */}
-            <div className="h-80 w-full absolute top-[-190px] lg:top-[-40%]">
-              {" "}
-              {/* container for each meats */}
-              <Image
-                loading="eager"
-                src={TopMeat}
-                className="object-contain"
-                fill
-                alt="background"
-              />{" "}
-              {/* image for each meat */}
-            </div>
-            <div className="h-80 w-full absolute bottom-[-190px] lg:bottom-[-40%]">
-              {" "}
-              {/* container for each meats */}
-              <Image
-                loading="eager"
-                src={BottomMeat}
-                className="object-contain"
-                fill
-                alt="background"
-              />{" "}
-              {/* image for each meat */}
-            </div>
-          </div>
-          <Image
-            loading="eager"
-            src={BackgroundMeat}
-            className="object-cover absolute -z-50"
-            fill
-            alt="background"
-          />
-        </div>
+        </BackgroundVariant>
         <div className="w-[85%] flex flex-col sm:flex-row justify-center sm:justify-between items-start sm:items-center py-10">
           <p className="sm:pr-10 w-full whitespace-pre-line">
             Your Bloke will range from a Boxing Kangaroo to a Barbeque King.
